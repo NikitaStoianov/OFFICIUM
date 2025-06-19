@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel = "icon" href = "./source/aquilaDarkBlue.png" type = "image/x-icon" />
+        <title>OFFICIUM</title>
+        <link href = "./index.css" rel = "stylesheet"/>
+        <script defer src = "./index.js"></script>
+        <script defer src="//www.cbr-xml-daily.ru/daily_jsonp.js"></script>
+    </head>
+    <body>
+        <div id = "header">
+            <img id = "aquila" src = "source/aquilaDarkBlue.png" alt = "Aquila" />
+            <p id = "title">GOOD MORNING,<BR> MR. NIKITA STOIANOV</p>
+            <div id = "subTitle">
+                <p>- Senatus Populusque Romanus -</p>
+            </div>
+        </div>
+
+        <div id = "info">
+
+
+            <div id = "currency">
+                <p style = "font-weight: 500; text-align: center; text-decoration: underline; margin-bottom: 10px;margin-top: 10px;">Change</p>
+                <select id = "select" style = "width: 100%">
+                    <option value="RUB">RUB</option>
+                    <option value="CHF">CHF</option>
+                </select>
+                <div style = "display: flex; align-items: center;"><p id="USD" ><p></p><p id = "USDtag"></p></div>
+                <div style = "display: flex; align-items: center;"><p id="EUR" ></p><p id = "EURtag"></p></div>
+                <div style = "display: flex; align-items: center;"><p id="CHF" ></p><p id = "CHFtag"></p></div>
+            </div>
+            <div id = "stock">
+                <p style = "font-weight: 500; text-align: center; text-decoration: underline; margin-bottom: 10px;margin-top: 10px;">Exchange</p>
+                <div style = "display: flex; align-items: center;"><p id="imoex" ><p></p><p id = "imoextag"></p></div>
+                <input id = "moexInput" placeholder = "MOEX shares ticker" />
+                <div style = "display: flex; align-items: center;"><p id="moexshare" ><p></p><p id = "moexsharetag"></p></div>
+                <div style = "display: flex; align-items: center;"><p id="dia" >1<p></p><p id = "diatag">1</p></div>
+                <div style = "display: flex; align-items: center;"><p id="brent" >1<p></p><p id = "brenttag">1</p></div>
+            </div>
+        </div>
+
+        <div id = "timeWeather">
+            <p id = "timeField"></p>
+            <p id = "dateField">18:00:01</p>
+            <p id = "zoneField">18:00:01</p>
+            <input id = "city" placeholder="Moscow">
+            <div id = "weather"></div>
+            
+        </div>
+
+    </body>
+</html>

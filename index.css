@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Britannic";
+    src: url("./source/font/britannic-regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Edward";
+    src: url("./source/font/edwardianscriptitc.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Optima";
+    src: url("./source/font/optima.ttf") format("opentype");
+}
+
+p{
+    margin: 0px;
+}
+
+:root{
+    --mainColor: rgb(23,46,63)
+}
+
+#header{
+    display: grid;
+    grid-template-columns: auto 5fr;
+    grid-template-rows: 10fr 1fr;
+    border-bottom: 5px solid var(--mainColor);
+}
+
+#aquila{
+    width: 200px;
+    grid-area: 1/1/3/2;
+
+}
+
+#title{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    font-family: "Britannic";
+    font-size: xx-large;
+    text-align: center;
+    color: var(--mainColor);
+}
+
+#subTitle{
+    font-family: "Edward";
+    border-top: 2px solid var(--mainColor);
+    text-align: center;
+    color: var(--mainColor);
+}
+
+
+
+
+
+
+#info{
+    float: left;
+    width: 200px;
+    border-right: 2px solid black;
+    height: 100rem;
+}
+
+#currency{
+    font-family: "Optima";
+    font-size: small;
+}
+
+#stock{
+    font-family: "Optima";
+    font-size: small;
+}
+#moexInput::placeholder{
+    color: black;
+    font-family: Optima;
+}
+#moexInput{
+    border: none;
+    font-family: "Optima";
+    font-size: small;
+    color: black;
+}
+#USAInput::placeholder{
+    color: black;
+    font-family: Optima;
+}
+#USAInput{
+    border: none;
+    font-family: "Optima";
+    font-size: small;
+    color: black;
+}
+
+
+
+
+
+
+
+#timeWeather{
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+    font-family: "Britannic";
+}
+
+#timeField{
+    margin-top: 50px;
+    font-size: xx-large;
+}
+
+#dateField{
+    font-size:large;
+}
+
+#zoneField{
+    font-size: small;
+    color:darkgrey;
+}
+
+#city{
+    margin-top: 25px;
+    border: none;
+    text-align: center;
+    font-family: "Britannic";
+    font-size: small;
+    color: black;
+    margin-bottom: 10px;
+    
+}
+
+#city::placeholder{
+    color:black
+}
+
+#day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+    font-family: Optima;
+    text-align: center;
+}
+
+
+
+
